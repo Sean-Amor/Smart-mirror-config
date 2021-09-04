@@ -30,8 +30,8 @@
 	language: "en",
 	locale: "en-US",
 	logLevel: ["INFO", "LOG", "WARN", "ERROR"], // Add "DEBUG" for even more logging
-	timeFormat: 24,
-	units: "metric",
+	timeFormat:12,
+	units: "imperial",
 	// serverOnly:  true/false/"local" ,
 	// local for armv6l processors, default
 	//   starts serveronly and then starts chrome browser
@@ -44,19 +44,13 @@
 			module: "clock",
 			position: "top_left"
 		},
-		
-		{
-			module: "compliments",
-			position: "bottom_bar"
-		},
-		
 		{
 			module: "currentweather",
 			position: "top_right",
 			config: {
-				location: "Victoria",
-				locationID: "6174041", //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
-				appid: "2665d33bd4d9876dc8f976fcb65e2600"
+				location: "Austin, TX",
+				locationID: "4671654", //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
+				appid: "4798dec01a9dff0e0521423fcd8fdbf4"
 			}
 		},
 		{
@@ -64,9 +58,9 @@
 			position: "top_right",
 			header: "Weather Forecast",
 			config: {
-				location: "Victoria",
-				locationID: "6174041", //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
-				appid: "2665d33bd4d9876dc8f976fcb65e2600"
+				location: "Austin, TX",
+				locationID: "4671654", //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
+				appid: "4798dec01a9dff0e0521423fcd8fdbf4"
 			}
 		},
 		{
